@@ -1,0 +1,8 @@
+file_format: "1"
+id: tb44
+name: tb44
+type: shield
+url: https://github.com/os55010/zmk-config-tb44
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
