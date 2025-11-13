@@ -7,6 +7,14 @@
 
     };
 };
+/ {
+    gpio_low_pin {
+        compatible = "gpio-leds";
+        d14_low: d14_low {
+            gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
+        };
+    };
+};
 
 &pinctrl {
     spi0_default: spi0_default {
