@@ -86,7 +86,7 @@
 
         FUNCTION {
             bindings = <
-                &kp MINUS      &kp EQUAL     &kp TILDE            &kp R        &kp T        &kp PG_UP     &out OUT_TOG  &kp Y          &kp LEFT_ALT      &kp PSCRN    &kp O
+                &kp MINUS      &kp EQUAL     &kp GRAVE            &kp R        &kp T        &kp PG_UP     &out OUT_TOG  &kp Y          &kp LEFT_ALT      &kp PSCRN    &kp O
                 &kp LBKT       &kp RBKT      &kp BACKSLASH        &kp SEMI     &kp SQT      &kp PG_DN     &kp J         &kp K          &kp L      &kp P        &kp MINUS
                 &kp COMMA      &kp DOT       &kp SLASH            &kp V        &kp B        &kp LANG1     &kp LANG2     &kp M          &kp COMMA  &kp DOT      &mkp MB2
                 &mt LCTRL TAB  &kp LEFT_WIN  &mt LEFT_ALT DELETE  &lt 1 SPACE  &mkp MB1     &mkp MB2      &lt 2 SPACE   &kp BACKSPACE  &none      &none        &mkp MB1
