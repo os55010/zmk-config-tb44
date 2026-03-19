@@ -1,6 +1,15 @@
 #include "tb44.dtsi"
 
 / {
+    zmk_mouse_x: zmk_mouse_x {
+        compatible = "zmk,input-axis";
+    };
+
+    zmk_mouse_y: zmk_mouse_y {
+        compatible = "zmk,input-axis";
+    };
+};
+/ {
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
