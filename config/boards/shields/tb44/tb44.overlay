@@ -51,6 +51,9 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        zephyr,axis-x = <&zmk_mouse_x>;
+        zephyr,axis-y = <&zmk_mouse_y>;
+
         scroll-layers = <1 2 5>;
     };
 };
