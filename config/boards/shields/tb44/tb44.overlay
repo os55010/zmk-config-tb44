@@ -2,18 +2,27 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
+    scroll_mapper: scroll_mapper {
+        compatible = "zmk,input-processor-code-map";
+
+        input-codes
+            = <INPUT_REL_X INPUT_REL_HWHEEL>,
+              <INPUT_REL_Y INPUT_REL_WHEEL>;
+    };
+
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
         layers = <0>;
     };
+
     trackball_scroll_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        layers = <1 2 3 4 5>;
+        layers = <1 2 3>;
 
-        input-processors = <&scroll_transform>;
+        input-processors = <&scroll_mapper>;
     };
 };
 / {
