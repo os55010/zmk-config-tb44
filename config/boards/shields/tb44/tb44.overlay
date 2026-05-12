@@ -49,7 +49,7 @@
         compatible = "pixart,pmw3610";
         zephyr,axis-x = <INPUT_REL_Y>; 
         zephyr,axis-y = <INPUT_REL_X>;
-        invert-x;
+        invert-y;
         reg = <0>;
         spi-max-frequency = <2000000>;
         motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
