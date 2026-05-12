@@ -54,7 +54,7 @@
         spi-max-frequency = <2000000>;
         motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         inertial-scroll;
-        inertial-scroll-layers = <6 7>;
+        inertial-scroll-layers = <1 2 3 4 5 6 7>;
         inertial-scroll-gain-pct = <130>;
         inertial-scroll-decay-pct = <99>;
         inertial-scroll-interval-ms = <10>;
