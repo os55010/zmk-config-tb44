@@ -1,10 +1,20 @@
 #include "tb44.dtsi"
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi>
 
 / {
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        scroller {
+            layers = <1 2 3 4 5>;
+            input-processors = <
+                &zip_xy_to_scroll_mapper                       // XY移動でスクロール
+                &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT // スクロールのY軸を反転
+                &zip_scroll_scaler 1 16                        // スクロール感度調整
+            >;
+        };
     };
 };
 / {
