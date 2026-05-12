@@ -1,5 +1,5 @@
 #include "tb44.dtsi"
-#include <dt-bindings/zmk/input/input-event-codes.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
     trackball_listener {
